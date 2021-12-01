@@ -17,7 +17,7 @@ pred_var <- c('dem','twi','slp','asp','DD5','PAS','AHM')
 
 # ============= Read input ================
 df_fw <- read.csv(paste(datapath,'LC_TOPO_',gname,'.csv',sep=""))
-df_fw[c('twi','slp','asp')] <- df_fw[c('twi','slp','asp')]/100 # scale
+df_fw['slp'] <- df_fw['slp']/100 # scale
 df_clm <- read.csv(paste(datapath,'CLIM_',gname,'.csv',sep=""))
 df_fw['R'] <- df_fw['r']%/%SCALE
 df_fw['C'] <- df_fw['c']%/%SCALE
