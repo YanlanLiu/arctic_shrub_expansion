@@ -4,8 +4,7 @@ library(biomod2)
 # ====== Control panel ======
 
 
-datapath <- "/global/scratch/yanlanliu/NGEE_data/Input/cleaned_code/"
-#datapath <- "../Input/"
+datapath <- "../Input/"
 trainpath <- "./Output_train/"
 outpath <- "./Output_forward/"
 
